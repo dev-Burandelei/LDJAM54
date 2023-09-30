@@ -16,3 +16,7 @@ shape = SubResource("RectangleShape2D_x4r25")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.125, 0.125)
 texture = ExtResource("1_up875")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
