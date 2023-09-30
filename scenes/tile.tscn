@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://m5yp52deh0eo"]
+
+[ext_resource type="Script" path="res://scripts/tile.gd" id="1_2rf5n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kenqg"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sevj4"]
+size = Vector2(16, 16)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_2rf5n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.99, 0.99)
+shape = SubResource("RectangleShape2D_kenqg")
+
+[node name="Neighbours" type="Node2D" parent="."]
+
+[node name="Top" type="Area2D" parent="Neighbours"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbours/Top"]
+position = Vector2(0, -16)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("RectangleShape2D_sevj4")
+
+[node name="Right" type="Area2D" parent="Neighbours"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbours/Right"]
+position = Vector2(16, 0)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("RectangleShape2D_sevj4")
+
+[node name="Bottom" type="Area2D" parent="Neighbours"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbours/Bottom"]
+position = Vector2(0, 16)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("RectangleShape2D_sevj4")
+
+[node name="Left" type="Area2D" parent="Neighbours"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbours/Left"]
+position = Vector2(-16, 0)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("RectangleShape2D_sevj4")
