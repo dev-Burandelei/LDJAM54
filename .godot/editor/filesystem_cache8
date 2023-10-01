@@ -1,0 +1,17 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1696189528
+icon.svg::CompressedTexture2D::4947917176479174178::1696188136::1696188217::1::::<><>::
+scheme.png::CompressedTexture2D::2254420751914847990::1696188136::1696188217::1::::<><>::
+::res://assets/::1696189528
+botao.png::CompressedTexture2D::3873605764770235706::1696189522::1696189529::1::::<><>::
+New Piskel-1.png (1).png::CompressedTexture2D::1216510578540925241::1696188136::1696188217::1::::<><>::
+New Piskel-1.png (2).png::CompressedTexture2D::1987567427873509717::1696188136::1696188217::1::::<><>::
+New Piskel-1.png.png::CompressedTexture2D::4938724626052735510::1696188136::1696188217::1::::<><>::
+New Piskel.png::CompressedTexture2D::7614863153055657668::1696188136::1696188217::1::::<><>::
+::res://scenes/::1696189528
+cleito.tscn::PackedScene::6828567841011672191::1696188136::0::1::::<><>::res://scripts/rock.gd<>uid://rlj0syyxkh4d
+perry.tscn::PackedScene::5921480866052862136::1696188136::0::1::::<><>::res://scripts/perry.gd<>uid://3k17euf01u5j
+testmap.tscn::PackedScene::4389038221926680370::1696188880::0::1::::<><>::uid://ccmmcqosqq2v7::::res://assets/New Piskel-1.png.png<>uid://dgqxxihv1liga::::res://assets/New Piskel.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://c4j2rq72au0et::::res://scenes/cleito.tscn
+::res://scripts/::1696188136
+perry.gd::GDScript::-1::1696188136::0::1::::<>CharacterBody2D<>::
+rock.gd::GDScript::-1::1696188136::0::1::::<>CharacterBody2D<>::

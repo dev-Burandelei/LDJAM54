@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=3 uid="uid://dx8au8yvqlmc4"]
+
+[ext_resource type="PackedScene" uid="uid://c4j2rq72au0et" path="res://scenes/cleito.tscn" id="1_608d1"]
+[ext_resource type="PackedScene" uid="uid://cqmn6o8m6h40k" path="res://scenes/perry.tscn" id="2_eavri"]
+[ext_resource type="PackedScene" uid="uid://k5xmjhtwjiw6" path="res://scenes/button.tscn" id="3_cadbo"]
+[ext_resource type="Texture2D" uid="uid://dgqxxihv1liga" path="res://assets/New Piskel.png" id="4_61o5o"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vfm6r"]
+texture = ExtResource("4_61o5o")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_onxnb"]
+sources/0 = SubResource("TileSetAtlasSource_vfm6r")
+
+[node name="testmap_vand" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_onxnb")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65537, 0, 0, -1, 0, 1, 65535, 0, 2, 131071, 0, 3, 196607, 0, 4, 262143, 0, 5, 327679, 0, 6, 393215, 0, 7, -131072, 65536, 0, -65536, 65536, 1, 0, 65536, 2, 65536, 65536, 3, 131072, 65536, 4, 196608, 65536, 5, 262144, 65536, 6, 327680, 65536, 7, -131071, 131072, 0, -65535, 131072, 1, 1, 131072, 2, 65537, 131072, 3, 131073, 131072, 4, 196609, 131072, 5, 262145, 131072, 6, 327681, 131072, 7, -131070, 196608, 0, -65534, 196608, 1, 2, 196608, 2, 65538, 196608, 3, 131074, 196608, 4, 196610, 196608, 5, 262146, 196608, 6, 327682, 196608, 7, -131069, 262144, 0, -65533, 262144, 1, 3, 262144, 2, 65539, 262144, 3, 131075, 262144, 4, 196611, 262144, 5, 262147, 262144, 6, 327683, 262144, 7, -131068, 327680, 0, -65532, 327680, 1, 4, 327680, 2, 65540, 327680, 3, 131076, 327680, 4, 196612, 327680, 5, 262148, 327680, 6, 327684, 327680, 7, -131067, 393216, 0, -65531, 393216, 1, 5, 393216, 2, 65541, 393216, 3, 131077, 393216, 4, 196613, 393216, 5, 262149, 393216, 6, 327685, 393216, 7, -131066, 458752, 0, -65530, 458752, 1, 6, 458752, 2, 65542, 458752, 3, 131078, 458752, 4, 196614, 458752, 5, 262150, 458752, 6, 327686, 458752, 7)
+
+[node name="Cleito" parent="." instance=ExtResource("1_608d1")]
+position = Vector2(40, 24)
+
+[node name="Perry" parent="." instance=ExtResource("2_eavri")]
+position = Vector2(8, 24)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(48, 31)
+zoom = Vector2(4, 4)
+
+[node name="button" parent="." instance=ExtResource("3_cadbo")]
+position = Vector2(80, 16)
