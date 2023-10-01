@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://m5yp52deh0eo"]
+[gd_scene load_steps=5 format=3 uid="uid://m5yp52deh0eo"]
 
 [ext_resource type="Script" path="res://scripts/tile.gd" id="1_2rf5n"]
+[ext_resource type="Script" path="res://scripts/sides.gd" id="2_co2jl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kenqg"]
 size = Vector2(16, 16)
@@ -9,6 +10,8 @@ size = Vector2(16, 16)
 size = Vector2(16, 16)
 
 [node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 8
+collision_mask = 0
 script = ExtResource("1_2rf5n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -18,6 +21,7 @@ shape = SubResource("RectangleShape2D_kenqg")
 [node name="Neighbours" type="Node2D" parent="."]
 
 [node name="Top" type="Area2D" parent="Neighbours"]
+script = ExtResource("2_co2jl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbours/Top"]
 position = Vector2(0, -16)
@@ -44,3 +48,8 @@ shape = SubResource("RectangleShape2D_sevj4")
 position = Vector2(-16, 0)
 scale = Vector2(0.25, 0.25)
 shape = SubResource("RectangleShape2D_sevj4")
+
+[connection signal="body_entered" from="Neighbours/Top" to="." method="_on_top_body_entered"]
+[connection signal="body_entered" from="Neighbours/Right" to="." method="_on_right_body_entered"]
+[connection signal="body_entered" from="Neighbours/Bottom" to="." method="_on_bottom_body_entered"]
+[connection signal="body_entered" from="Neighbours/Left" to="." method="_on_left_body_entered"]
