@@ -43,5 +43,4 @@ Right={
 2d_physics/layer_1="Player"
 2d_physics/layer_2="RockHitbox"
 2d_physics/layer_3="RockHurtbox"
-2d_physics/layer_4="button"
-2d_physics/layer_5="mist"
+2d_physics/layer_4="TileHurtbox"
