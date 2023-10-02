@@ -1,10 +1,48 @@
-[gd_scene load_steps=4 format=3 uid="uid://cqmn6o8m6h40k"]
+[gd_scene load_steps=8 format=3 uid="uid://cqmn6o8m6h40k"]
 
 [ext_resource type="Script" path="res://scripts/perry.gd" id="1_eqjdl"]
-[ext_resource type="Texture2D" uid="uid://3k17euf01u5j" path="res://assets/New Piskel-1.png (2).png" id="1_up875"]
+[ext_resource type="Texture2D" uid="uid://b4di2outnwcll" path="res://assets/costas_parado.png" id="2_jasyh"]
+[ext_resource type="Texture2D" uid="uid://be10e4v3iasfn" path="res://assets/perfil_esquerdo_parado.png" id="3_itjgb"]
+[ext_resource type="Texture2D" uid="uid://yed741vo54bp" path="res://assets/pperfil_direito_parado.png" id="4_cnubp"]
+[ext_resource type="Texture2D" uid="uid://b6ry0p7t6w6ev" path="res://assets/frente_parado.png" id="5_0ve4r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4r25"]
 size = Vector2(16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rctss"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jasyh")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_itjgb")
+}],
+"loop": true,
+"name": &"idle_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_cnubp")
+}],
+"loop": true,
+"name": &"idle_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_0ve4r")
+}],
+"loop": true,
+"name": &"idle_up",
+"speed": 5.0
+}]
 
 [node name="Perry" type="CharacterBody2D"]
 collision_mask = 2
@@ -13,9 +51,10 @@ script = ExtResource("1_eqjdl")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_x4r25")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.125, 0.125)
-texture = ExtResource("1_up875")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.0266667, 0.0266667)
+sprite_frames = SubResource("SpriteFrames_rctss")
+animation = &"idle_right"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.25

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://c4j2rq72au0et"]
 
 [ext_resource type="Script" path="res://scripts/rock.gd" id="1_0jvyr"]
-[ext_resource type="Texture2D" uid="uid://rlj0syyxkh4d" path="res://assets/New Piskel-1.png (1).png" id="1_wkgmx"]
+[ext_resource type="Texture2D" uid="uid://ch7sg81h2hriw" path="res://assets/pedra_empurrar2.png" id="2_esb0f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_goydy"]
 size = Vector2(16, 16)
@@ -19,9 +19,8 @@ scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_goydy")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-2.38419e-07, 0)
-scale = Vector2(0.125, 0.125)
-texture = ExtResource("1_wkgmx")
+scale = Vector2(0.0266667, 0.0266667)
+texture = ExtResource("2_esb0f")
 
 [node name="Area2D" type="Area2D" parent="."]
 scale = Vector2(0.99, 0.99)
