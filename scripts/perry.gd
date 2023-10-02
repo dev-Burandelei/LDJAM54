@@ -42,17 +42,17 @@ func move():
 		$Sprite2D.play("idle_down")
 		position.y -= MOVE_RANGE
 		move_timer.start(MOVE_COOLDOWN)
-	elif hitboxes[1] != TYPES.WALL and Input.is_action_just_pressed("Down"):
+	elif hitboxes[2] != TYPES.WALL and Input.is_action_just_pressed("Down"):
 		$Sprite2D.play("idle_up")
 		last_movement = "down"
 		position.y += MOVE_RANGE
 		move_timer.start(MOVE_COOLDOWN)
-	elif hitboxes[2] != TYPES.WALL and Input.is_action_just_pressed("Left"):
+	elif hitboxes[3] != TYPES.WALL and Input.is_action_just_pressed("Left"):
 		$Sprite2D.play("idle_left")
 		last_movement = "left"
 		position.x -= MOVE_RANGE
 		move_timer.start(MOVE_COOLDOWN)
-	elif hitboxes[3] != TYPES.WALL and Input.is_action_just_pressed("Right"):
+	elif hitboxes[1] != TYPES.WALL and Input.is_action_just_pressed("Right"):
 		$Sprite2D.play("idle_right")
 		last_movement = "right"
 		position.x += MOVE_RANGE

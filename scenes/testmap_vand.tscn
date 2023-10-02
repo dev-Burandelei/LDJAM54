@@ -10,6 +10,25 @@
 [ext_resource type="Texture2D" uid="uid://bj5oxjthvv37s" path="res://assets/nevoa2.png" id="7_y70u8"]
 [ext_resource type="PackedScene" uid="uid://m5yp52deh0eo" path="res://scenes/tile.tscn" id="8_x6sb2"]
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qhr6q"]
+texture = ExtResource("2_5amwg")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uxn8q"]
 texture = ExtResource("2_km5ta")
 0:0/0 = 0
@@ -77,32 +96,13 @@ texture = ExtResource("2_km5ta")
 6:7/0 = 0
 7:7/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qhr6q"]
-texture = ExtResource("2_5amwg")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7dmqi"]
 texture = ExtResource("3_jutpt")
 
 [sub_resource type="TileSet" id="TileSet_n7iwx"]
 sources/1 = SubResource("TileSetAtlasSource_qhr6q")
 sources/8 = SubResource("TileSetAtlasSource_7dmqi")
-sources/0 = SubResource("TileSetAtlasSource_uxn8q")
+sources/2 = SubResource("TileSetAtlasSource_uxn8q")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8w62p"]
 texture = ExtResource("7_y70u8")
