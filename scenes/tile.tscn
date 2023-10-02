@@ -52,7 +52,12 @@ position = Vector2(-16, 0)
 scale = Vector2(0.25, 0.25)
 shape = SubResource("RectangleShape2D_sevj4")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+
 [connection signal="body_entered" from="Neighbours/Top" to="." method="_on_top_body_entered"]
 [connection signal="body_entered" from="Neighbours/Right" to="." method="_on_right_body_entered"]
 [connection signal="body_entered" from="Neighbours/Bottom" to="." method="_on_bottom_body_entered"]
 [connection signal="body_entered" from="Neighbours/Left" to="." method="_on_left_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -8,5 +8,5 @@ const TYPES = {GROUND = "terra",
 
 func dig():
 	for body in get_overlapping_bodies():
-		if body.has_method("change_type"):
-			body.change_type(TYPES.HOLE)
+		if body.return_type() == TYPES.GROUND:
+			body.start_timer()

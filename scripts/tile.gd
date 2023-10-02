@@ -15,6 +15,7 @@ const CURRENT = {IN = 1,
 @onready var righthitbox = $Neighbours/Right
 @onready var downhitbox = $Neighbours/Bottom
 @onready var lefthitbox = $Neighbours/Left
+@onready var timer = $Timer
 
 @export var type = TYPES.GROUND
 
@@ -22,9 +23,12 @@ var hitboxes
 
 func _ready():
 	hitboxes = [uphitbox, righthitbox, downhitbox, lefthitbox]
-	change_type(type)
 	if type == TYPES.RIVER:
 		river_base()
+	change_type(type)
+
+func _physics_process(delta):
+	pass
 
 func change_type(type):
 	match type:
@@ -37,9 +41,9 @@ func change_type(type):
 			type = TYPES.HOLE
 			for side in hitboxes:
 				side.set_deferred("disabled", false)
-			print(%TileMap.local_to_map(self.global_position))
-			print(%TileMap.get_cell_tile_data(0, %TileMap.local_to_map(self.global_position)))
-			%TileMap.set_cell(0, %TileMap.local_to_map(self.global_position), 2)
+#			print(%TileMap.local_to_map(self.global_position))
+#			print(%TileMap.get_cell_tile_data(0, %TileMap.local_to_map(self.global_position)))
+#			%TileMap.set_cell(0, %TileMap.local_to_map(self.global_position), 2)
 			print("AAAA")
 		TYPES.RIVER:
 			type = TYPES.RIVER
@@ -61,22 +65,22 @@ func river_base():
 
 func _on_top_body_entered(body):
 	if body.has_method("get_down"):
-		if body.get_down() == CURRENT.OUT and uphitbox.return_current() == CURRENT.NONE:
+		if body.get_down() == CURRENT.OUT and uphitbox.return_current() != CURRENT.OUT:
 			uphitbox.change_current(CURRENT.IN)	
 
 func _on_right_body_entered(body):
 	if body.has_method("get_left"):
-		if body.get_left() == CURRENT.OUT and righthitbox.return_current() == CURRENT.NONE:
+		if body.get_left() == CURRENT.OUT and righthitbox.return_current() != CURRENT.OUT:
 			righthitbox.change_current(CURRENT.IN)
 
 func _on_bottom_body_entered(body):
 	if body.has_method("get_top"):
-		if body.get_top() == CURRENT.OUT and downhitbox.return_current() == CURRENT.NONE:
+		if body.get_top() == CURRENT.OUT and downhitbox.return_current() != CURRENT.OUT:
 			downhitbox.change_current(CURRENT.IN)
 
 func _on_left_body_entered(body):
 	if body.has_method("get_right"):
-		if body.get_right() == CURRENT.OUT and lefthitbox.return_current() == CURRENT.NONE:
+		if body.get_right() == CURRENT.OUT and lefthitbox.return_current() != CURRENT.OUT:
 			lefthitbox.change_current(CURRENT.IN)
 	
 func get_left():
@@ -92,4 +96,13 @@ func get_down():
 	return downhitbox.return_current()
 	
 func get_type():
+	return type
+
+func _on_timer_timeout():
+	change_type(TYPES.RIVER)
+	
+func start_timer():
+	timer.start()
+	
+func return_type():
 	return type

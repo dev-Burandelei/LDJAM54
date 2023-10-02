@@ -1,9 +1,78 @@
-[gd_scene load_steps=8 format=3 uid="uid://b3sc226h23jvu"]
+[gd_scene load_steps=11 format=3 uid="uid://b3sc226h23jvu"]
 
 [ext_resource type="Texture2D" uid="uid://ccmmcqosqq2v7" path="res://assets/New Piskel-1.png.png" id="1_bgypj"]
+[ext_resource type="Texture2D" uid="uid://rlj0syyxkh4d" path="res://assets/New Piskel-1.png (1).png" id="1_l55ed"]
 [ext_resource type="Texture2D" uid="uid://dgqxxihv1liga" path="res://assets/New Piskel.png" id="2_2hoid"]
 [ext_resource type="PackedScene" uid="uid://cqmn6o8m6h40k" path="res://scenes/perry.tscn" id="3_tqaka"]
 [ext_resource type="PackedScene" uid="uid://c4j2rq72au0et" path="res://scenes/cleito.tscn" id="4_pa0fl"]
+[ext_resource type="PackedScene" uid="uid://m5yp52deh0eo" path="res://scenes/tile.tscn" id="6_yv3we"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0w1l1"]
+texture = ExtResource("1_l55ed")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g3yhm"]
 texture = ExtResource("1_bgypj")
@@ -142,6 +211,7 @@ texture = ExtResource("2_2hoid")
 [sub_resource type="TileSet" id="TileSet_ka5ap"]
 sources/1 = SubResource("TileSetAtlasSource_g3yhm")
 sources/2 = SubResource("TileSetAtlasSource_0x0rg")
+sources/0 = SubResource("TileSetAtlasSource_0w1l1")
 
 [node name="Node2D" type="Node2D"]
 
@@ -158,7 +228,14 @@ zoom = Vector2(4, 4)
 position = Vector2(152, 120)
 
 [node name="Cleito" parent="." instance=ExtResource("4_pa0fl")]
-position = Vector2(184, 136)
+position = Vector2(176, 128)
 
 [node name="Cleito2" parent="." instance=ExtResource("4_pa0fl")]
-position = Vector2(216, 136)
+position = Vector2(208, 128)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("6_yv3we")]
+position = Vector2(136, 136)
+type = "água"
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("6_yv3we")]
+position = Vector2(120, 136)
