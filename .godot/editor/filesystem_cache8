@@ -1,25 +1,37 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696207085
+::res://::1696221952
 icon.svg::CompressedTexture2D::4947917176479174178::1696201982::1696201982::1::::<><>::
-scheme.png::CompressedTexture2D::2254420751914847990::1696201982::1696202300::1::::<><>::
-testmap_vand.gd::GDScript::-1::1696206373::0::1::::<>Node2D<>::
-::res://assets/::1696210445
+scheme.png::CompressedTexture2D::3181852827687139363::1696201982::1696213384::1::::<><>::
+testmap_vand.gd::GDScript::-1::1696212629::0::1::::<>Node2D<>::
+tile_grid_m.png::CompressedTexture2D::8435714176370671421::1696221952::1696221953::1::::<><>::
+::res://assets/::1696221565
 botao.png::CompressedTexture2D::3873605764770235706::1696202300::1696202300::1::::<><>::
+costas_parado.png::CompressedTexture2D::4428625001940286569::1696219486::1696219487::1::::<><>::
+frente_parado.png::CompressedTexture2D::4598871949154732313::1696218988::1696218991::1::::<><>::
+grama2.png::CompressedTexture2D::866991698487331714::1696220096::1696220096::1::::<><>::
+grama.png::CompressedTexture2D::8805951421021154674::1696219987::1696219988::1::::<><>::
 nevoa2.png::CompressedTexture2D::3080943222624133978::1696210445::1696210446::1::::<><>::
 nevoa.png::CompressedTexture2D::3075979941487140832::1696207080::1696207085::1::::<><>::
 New Piskel-1.png (1).png::CompressedTexture2D::1216510578540925241::1696201982::1696201982::1::::<><>::
 New Piskel-1.png (2).png::CompressedTexture2D::1987567427873509717::1696201982::1696201982::1::::<><>::
 New Piskel-1.png.png::CompressedTexture2D::4938724626052735510::1696201982::1696201982::1::::<><>::
 New Piskel.png::CompressedTexture2D::7614863153055657668::1696201982::1696201982::1::::<><>::
-::res://scenes/::1696210344
-button.tscn::PackedScene::765238173779422963::1696210343::0::1::::<><>::res://scripts/button.gd<>uid://bvgnyrqm1p2uo::::res://assets/botao.png
-cleito.tscn::PackedScene::6828567841011672191::1696210343::0::1::::<><>::res://scripts/rock.gd<>uid://rlj0syyxkh4d::::res://assets/New Piskel-1.png (1).png
-mapa.tscn::PackedScene::2909783853110019155::1696210344::0::1::::<><>::res://scripts/mapa.gd
-perry.tscn::PackedScene::5921480866052862136::1696210343::0::1::::<><>::res://scripts/perry.gd<>uid://3k17euf01u5j::::res://assets/New Piskel-1.png (2).png
-testmap.tscn::PackedScene::4389038221926680370::1696210343::0::1::::<><>::uid://ccmmcqosqq2v7::::res://assets/New Piskel-1.png.png<>uid://dgqxxihv1liga::::res://assets/New Piskel.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://c4j2rq72au0et::::res://scenes/cleito.tscn
-testmap_vand.tscn::PackedScene::8841767407837950857::1696210344::0::1::::<><>::uid://c4j2rq72au0et::::res://scenes/cleito.tscn<>res://testmap_vand.gd<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://k5xmjhtwjiw6::::res://scenes/button.tscn<>uid://bj3a6752gxgj5::::res://assets/nevoa.png<>uid://dgqxxihv1liga::::res://assets/New Piskel.png
-::res://scripts/::1696203377
+pedra_empurrar2.png::CompressedTexture2D::5331328755405461042::1696219927::1696219927::1::::<><>::
+pedra_empurrar.png::CompressedTexture2D::6568052534561212877::1696219833::1696219834::1::::<><>::
+perfil_esquerdo_parado.png::CompressedTexture2D::2722376504746516415::1696219486::1696219487::1::::<><>::
+pperfil_direito_parado.png::CompressedTexture2D::1693030619028406677::1696219486::1696219487::1::::<><>::
+::res://scenes/::1696220345
+button.tscn::PackedScene::765238173779422963::1696220345::0::1::::<><>::res://scripts/button.gd<>uid://bvgnyrqm1p2uo::::res://assets/botao.png
+cleito.tscn::PackedScene::6828567841011672191::1696220344::0::1::::<><>::res://scripts/rock.gd<>uid://ch7sg81h2hriw::::res://assets/pedra_empurrar2.png
+mapa.tscn::PackedScene::2909783853110019155::1696220345::0::1::::<><>::res://scripts/mapa.gd
+perry.tscn::PackedScene::5921480866052862136::1696220344::0::1::::<><>::res://scripts/perry.gd<>uid://b4di2outnwcll::::res://assets/costas_parado.png<>uid://be10e4v3iasfn::::res://assets/perfil_esquerdo_parado.png<>uid://yed741vo54bp::::res://assets/pperfil_direito_parado.png<>uid://b6ry0p7t6w6ev::::res://assets/frente_parado.png
+testmap.tscn::PackedScene::4389038221926680370::1696220344::0::1::::<><>::uid://ccmmcqosqq2v7::::res://assets/New Piskel-1.png.png<>uid://dgqxxihv1liga::::res://assets/New Piskel.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://c4j2rq72au0et::::res://scenes/cleito.tscn
+testmap_vand.tscn::PackedScene::8841767407837950857::1696220345::0::1::::<><>::uid://c4j2rq72au0et::::res://scenes/cleito.tscn<>res://testmap_vand.gd<>uid://ml8hx7qo5htq::::res://assets/grama2.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://k5xmjhtwjiw6::::res://scenes/button.tscn<>uid://bj5oxjthvv37s::::res://assets/nevoa2.png
+tile.tscn::PackedScene::905683068565329810::1696220345::0::1::::<><>::res://scripts/tile.gd<>res://scripts/sides.gd
+::res://scripts/::1696219616
 button.gd::GDScript::-1::1696202300::0::1::::<>Area2D<>::
 mapa.gd::GDScript::-1::1696203377::0::1::::<>Node2D<>::
-perry.gd::GDScript::-1::1696201982::0::1::::<>CharacterBody2D<>::
+perry.gd::GDScript::-1::1696219616::0::1::::<>CharacterBody2D<>::
 rock.gd::GDScript::-1::1696201982::0::1::::<>CharacterBody2D<>::
+sides.gd::GDScript::-1::1696213384::0::1::::<>Area2D<>::
+tile.gd::GDScript::-1::1696213384::0::1::::<>StaticBody2D<>::

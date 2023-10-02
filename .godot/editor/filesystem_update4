@@ -1,8 +1,8 @@
+res://scenes/button.tscn
+res://scenes/testmap_vand.tscn
 res://scenes/testmap.tscn
 res://scenes/perry.tscn
 res://scenes/cleito.tscn
-res://scenes/button.tscn
-res://scenes/testmap_vand.tscn
-res://scripts/mapa.gd
 res://scenes/mapa.tscn
-res://testmap_vand.gd
+res://scripts/perry.gd
+res://scenes/tile.tscn
