@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c4j2rq72au0et"]
+[gd_scene load_steps=6 format=3 uid="uid://c4j2rq72au0et"]
 
 [ext_resource type="Script" path="res://scripts/rock.gd" id="1_0jvyr"]
 [ext_resource type="Texture2D" uid="uid://ch7sg81h2hriw" path="res://assets/pedra_empurrar2.png" id="2_esb0f"]
@@ -7,6 +7,9 @@
 size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qltla"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xqxbm"]
 size = Vector2(16, 16)
 
 [node name="Cleito" type="CharacterBody2D"]
@@ -36,6 +39,15 @@ shape = SubResource("RectangleShape2D_qltla")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.25
 one_shot = true
+
+[node name="Colision_button" type="Area2D" parent="." groups=["cleiton"]]
+collision_layer = 32
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Colision_button"]
+position = Vector2(8, 8)
+scale = Vector2(0.99, 0.99)
+shape = SubResource("RectangleShape2D_xqxbm")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
