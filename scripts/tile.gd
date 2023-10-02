@@ -10,13 +10,15 @@ const CURRENT = {IN = 1,
 				OUT = -1,
 				NONE = 0}
 
-var hitboxes
 @onready var hurtbox = $CollisionShape2D
 @onready var uphitbox = $Neighbours/Top
 @onready var righthitbox = $Neighbours/Right
 @onready var downhitbox = $Neighbours/Bottom
 @onready var lefthitbox = $Neighbours/Left
+
 @export var type = TYPES.GROUND
+
+var hitboxes
 
 func _ready():
 	hitboxes = [uphitbox, righthitbox, downhitbox, lefthitbox]
@@ -35,6 +37,10 @@ func change_type(type):
 			type = TYPES.HOLE
 			for side in hitboxes:
 				side.set_deferred("disabled", false)
+			print(%TileMap.local_to_map(self.global_position))
+			print(%TileMap.get_cell_tile_data(0, %TileMap.local_to_map(self.global_position)))
+			%TileMap.set_cell(0, %TileMap.local_to_map(self.global_position), 2)
+			print("AAAA")
 		TYPES.RIVER:
 			type = TYPES.RIVER
 			for side in hitboxes:
@@ -44,6 +50,10 @@ func change_type(type):
 			for side in hitboxes:
 				side.set_deferred("disabled", true)
 				side.change_current(CURRENT.NONE)
+		TYPES.WALL:
+			type = TYPES.WALL
+			for side in hitboxes:
+				side.set_deferred("disabled", true)
 
 func river_base():
 	for side in hitboxes:
@@ -80,3 +90,6 @@ func get_right():
 	
 func get_down():
 	return downhitbox.return_current()
+	
+func get_type():
+	return type

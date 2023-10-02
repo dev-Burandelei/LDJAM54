@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://k5xmjhtwjiw6"]
+[gd_scene load_steps=4 format=3 uid="uid://pbapmo7fugu5"]
 
 [ext_resource type="Script" path="res://scripts/button.gd" id="1_xhe6t"]
 [ext_resource type="Texture2D" uid="uid://bvgnyrqm1p2uo" path="res://assets/botao.png" id="2_7q8oi"]

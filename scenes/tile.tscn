@@ -29,6 +29,7 @@ scale = Vector2(0.25, 0.25)
 shape = SubResource("RectangleShape2D_sevj4")
 
 [node name="Right" type="Area2D" parent="Neighbours"]
+script = ExtResource("2_co2jl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbours/Right"]
 position = Vector2(16, 0)
@@ -36,6 +37,7 @@ scale = Vector2(0.25, 0.25)
 shape = SubResource("RectangleShape2D_sevj4")
 
 [node name="Bottom" type="Area2D" parent="Neighbours"]
+script = ExtResource("2_co2jl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbours/Bottom"]
 position = Vector2(0, 16)
@@ -43,6 +45,7 @@ scale = Vector2(0.25, 0.25)
 shape = SubResource("RectangleShape2D_sevj4")
 
 [node name="Left" type="Area2D" parent="Neighbours"]
+script = ExtResource("2_co2jl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbours/Left"]
 position = Vector2(-16, 0)
