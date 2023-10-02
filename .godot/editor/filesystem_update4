@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://scenes/testmap.tscn
 res://scripts/mapa.gd
 res://scenes/perry.tscn
@@ -8,3 +9,15 @@ res://scenes/mapa.tscn
 res://scenes/tile.tscn
 res://scenes/mist.tscn
 res://testmap_vand.gd
+=======
+res://scenes/tile.tscn
+res://scripts/perry.gd
+res://scripts/player_sides.gd
+res://scripts/tile.gd
+res://scenes/perry.tscn
+res://scenes/testmap.tscn
+res://scenes/cleito.tscn
+res://scenes/button.tscn
+res://scenes/testmap_vand.tscn
+res://scripts/button.gd
+>>>>>>> evan

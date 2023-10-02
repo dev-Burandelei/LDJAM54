@@ -1,4 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< HEAD
 ::res://::1696261886
 icon.svg::CompressedTexture2D::4947917176479174178::1696201982::1696201982::1::::<><>::
 scheme.png::CompressedTexture2D::3181852827687139363::1696201982::1696213384::1::::<><>::
@@ -37,3 +38,41 @@ perry.gd::GDScript::-1::1696219616::0::1::::<>CharacterBody2D<>::
 rock.gd::GDScript::-1::1696201982::0::1::::<>CharacterBody2D<>::
 sides.gd::GDScript::-1::1696213384::0::1::::<>Area2D<>::
 tile.gd::GDScript::-1::1696256531::0::1::::<>StaticBody2D<>::
+=======
+::res://::1696260144
+icon.svg::CompressedTexture2D::4947917176479174178::1696191100::1696191247::1::::<><>::
+scheme.png::CompressedTexture2D::3181852827687139363::1696191100::1696191248::1::::<><>::
+testmap_vand.gd::GDScript::-1::1696250185::0::1::::<>Node2D<>::
+tile_grid_m.png::CompressedTexture2D::8435714176370671421::1696250185::1696250208::1::::<><>::
+::res://assets/::1696250208
+botao.png::CompressedTexture2D::3873605764770235706::1696250185::1696250185::1::::<><>::
+costas_parado.png::CompressedTexture2D::4428625001940286569::1696250185::1696250208::1::::<><>::
+frente_parado.png::CompressedTexture2D::4598871949154732313::1696250185::1696250208::1::::<><>::
+grama2.png::CompressedTexture2D::866991698487331714::1696250185::1696250208::1::::<><>::
+grama.png::CompressedTexture2D::8805951421021154674::1696250185::1696250208::1::::<><>::
+nevoa2.png::CompressedTexture2D::3080943222624133978::1696250185::1696250208::1::::<><>::
+nevoa.png::CompressedTexture2D::3075979941487140832::1696250185::1696250208::1::::<><>::
+New Piskel-1.png (1).png::CompressedTexture2D::1216510578540925241::1696191100::1696191247::1::::<><>::
+New Piskel-1.png (2).png::CompressedTexture2D::1987567427873509717::1696191100::1696191247::1::::<><>::
+New Piskel-1.png.png::CompressedTexture2D::4938724626052735510::1696191100::1696191247::1::::<><>::
+New Piskel.png::CompressedTexture2D::7614863153055657668::1696191100::1696191247::1::::<><>::
+pedra_empurrar2.png::CompressedTexture2D::5331328755405461042::1696250185::1696250208::1::::<><>::
+pedra_empurrar.png::CompressedTexture2D::6568052534561212877::1696250185::1696250208::1::::<><>::
+perfil_esquerdo_parado.png::CompressedTexture2D::2722376504746516415::1696250185::1696250208::1::::<><>::
+pperfil_direito_parado.png::CompressedTexture2D::1693030619028406677::1696250185::1696250208::1::::<><>::
+::res://scenes/::1696250335
+button.tscn::PackedScene::1054924472601991502::1696250334::0::1::::<><>::res://scripts/button.gd<>res://assets/botao.png
+cleito.tscn::PackedScene::6828567841011672191::1696250334::0::1::::<><>::res://scripts/rock.gd<>uid://ch7sg81h2hriw::::res://assets/pedra_empurrar2.png
+mapa.tscn::PackedScene::-1::1696250185::0::1::::<><>::
+perry.tscn::PackedScene::5921480866052862136::1696250334::0::1::::<><>::res://scripts/perry.gd<>uid://b4di2outnwcll::::res://assets/costas_parado.png<>uid://be10e4v3iasfn::::res://assets/perfil_esquerdo_parado.png<>uid://yed741vo54bp::::res://assets/pperfil_direito_parado.png<>uid://b6ry0p7t6w6ev::::res://assets/frente_parado.png
+testmap.tscn::PackedScene::4389038221926680370::1696250334::0::1::::<><>::uid://ccmmcqosqq2v7::::res://assets/New Piskel-1.png.png<>uid://dgqxxihv1liga::::res://assets/New Piskel.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://c4j2rq72au0et::::res://scenes/cleito.tscn
+testmap_vand.tscn::PackedScene::4466161955126779841::1696250335::0::1::::<><>::uid://c4j2rq72au0et::::res://scenes/cleito.tscn<>res://testmap_vand.gd<>uid://ml8hx7qo5htq::::res://assets/grama2.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://pbapmo7fugu5::::res://scenes/button.tscn<>uid://dsgk8k5myywt6::::res://tile_grid_m.png<>uid://bj5oxjthvv37s::::res://assets/nevoa2.png
+tile.tscn::PackedScene::905683068565329810::1696250334::0::1::::<><>::res://scripts/tile.gd<>res://scripts/sides.gd
+::res://scripts/::1696250185
+button.gd::GDScript::-1::1696250185::0::1::::<>Area2D<>::
+mapa.gd::GDScript::-1::1696250185::0::1::::<>Node2D<>::
+perry.gd::GDScript::-1::1696250185::0::1::::<>CharacterBody2D<>::
+rock.gd::GDScript::-1::1696191100::0::1::::<>CharacterBody2D<>::
+sides.gd::GDScript::-1::1696191184::0::1::::<>Area2D<>::
+tile.gd::GDScript::-1::1696250172::0::1::::<>StaticBody2D<>::
+>>>>>>> evan
