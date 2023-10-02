@@ -49,12 +49,14 @@ collision_mask = 2
 script = ExtResource("1_eqjdl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 8)
 shape = SubResource("RectangleShape2D_x4r25")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0266667, 0.0266667)
 sprite_frames = SubResource("SpriteFrames_rctss")
 animation = &"idle_right"
+centered = false
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.25

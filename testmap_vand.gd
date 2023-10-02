@@ -2,7 +2,7 @@ extends Node2D
 
 var emitter_node
 var num_buttons = 0
-var completed_value = 1
+var completed_value = 2
 var expansion = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,7 +18,7 @@ func _connect_all_buttons():
 		button_node.connect("release", Callable(self, "_on_release_signal_received"))
 		
 func _on_held_down_signal_received():
-	num_buttons += 1
+	num_buttons += 2
 	if num_buttons == completed_value:
 		call_expansion()
 	
@@ -30,10 +30,19 @@ func call_expansion():
 	match expansion:
 		1:
 			call_expansion_1()
+		2: 
+			call_expansion_2()
+		3: 
+			call_expansion_3()
+		4:
+			call_expansion_4()
 
 func call_expansion_1():
-	disebled_node($button)
-	disebled_mist($mist_1)
+	$Camera2D.zoom = Vector2(9, 5)
+	disebled_node($Node_1/button_1)
+	disebled_mist($Node_1/mist_1)
+	completed_value = 1
+	num_buttons = 0
 	
 func disebled_node(node):
 	node.hide()
@@ -44,4 +53,26 @@ func disebled_node(node):
 func disebled_mist(node):
 	node.visible = false
 	#$mist_1.collision_layer = 0
+
+func call_expansion_2():
+	$Camera2D.zoom = Vector2(7, 4)
+	disebled_node($Node_2/button_2)
+	disebled_mist($Node_2/mist_2)
+	completed_value = 2
+	num_buttons = 1
+
+func call_expansion_3():
+	$Camera2D.zoom = Vector2(6, 3)
+	disebled_node($Node_3/button_3)
+	disebled_mist($Node_3/mist_3)
+	completed_value = 3
+	num_buttons = 1
+
+func call_expansion_4():
+	$Camera2D.zoom = Vector2(6, 3)
+	disebled_node($Node_4/button_4)
+	disebled_node($Node_4/button_4_2)
+	disebled_mist($Node_4/mist_4)
+	completed_value = 1
+	num_buttons = 1
 	
