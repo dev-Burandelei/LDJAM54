@@ -37,6 +37,10 @@ func change_type(type):
 			type = TYPES.HOLE
 			for side in hitboxes:
 				side.set_deferred("disabled", false)
+			print(%TileMap.local_to_map(self.global_position))
+			print(%TileMap.get_cell_tile_data(0, %TileMap.local_to_map(self.global_position)))
+			%TileMap.set_cell(0, %TileMap.local_to_map(self.global_position), 0)
+			print("AAAA")
 		TYPES.RIVER:
 			type = TYPES.RIVER
 			for side in hitboxes:

@@ -1,13 +1,81 @@
-[gd_scene load_steps=14 format=3 uid="uid://b4vpbglgdnaqj"]
+[gd_scene load_steps=16 format=3 uid="uid://b4vpbglgdnaqj"]
 
 [ext_resource type="PackedScene" uid="uid://c4j2rq72au0et" path="res://scenes/cleito.tscn" id="1_608d1"]
 [ext_resource type="Script" path="res://testmap_vand.gd" id="1_eh2dw"]
 [ext_resource type="Texture2D" uid="uid://ml8hx7qo5htq" path="res://assets/grama2.png" id="2_5amwg"]
 [ext_resource type="PackedScene" uid="uid://cqmn6o8m6h40k" path="res://scenes/perry.tscn" id="2_eavri"]
+[ext_resource type="Texture2D" uid="uid://dgqxxihv1liga" path="res://assets/New Piskel.png" id="2_km5ta"]
 [ext_resource type="PackedScene" uid="uid://pbapmo7fugu5" path="res://scenes/button.tscn" id="3_cadbo"]
 [ext_resource type="Texture2D" uid="uid://dsgk8k5myywt6" path="res://tile_grid_m.png" id="3_jutpt"]
 [ext_resource type="Texture2D" uid="uid://bj5oxjthvv37s" path="res://assets/nevoa2.png" id="7_y70u8"]
 [ext_resource type="PackedScene" uid="uid://m5yp52deh0eo" path="res://scenes/tile.tscn" id="8_x6sb2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uxn8q"]
+texture = ExtResource("2_km5ta")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qhr6q"]
 texture = ExtResource("2_5amwg")
@@ -34,6 +102,7 @@ texture = ExtResource("3_jutpt")
 [sub_resource type="TileSet" id="TileSet_n7iwx"]
 sources/1 = SubResource("TileSetAtlasSource_qhr6q")
 sources/8 = SubResource("TileSetAtlasSource_7dmqi")
+sources/0 = SubResource("TileSetAtlasSource_uxn8q")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8w62p"]
 texture = ExtResource("7_y70u8")
@@ -111,10 +180,11 @@ sources/0 = SubResource("TileSetAtlasSource_8w62p")
 script = ExtResource("1_eh2dw")
 
 [node name="TileMap" type="TileMap" parent="."]
+unique_name_in_owner = true
 tile_set = SubResource("TileSet_n7iwx")
 format = 2
 layer_0/name = "0"
-layer_0/tile_data = PackedInt32Array(-65537, 1, 0, -1, 1, 1, 65535, 1, 2, 131071, 1, 3, 196607, 1, 0, 262143, 1, 1, 327679, 1, 2, 393215, 1, 3, -131072, 65537, 0, -65536, 65537, 1, 0, 65537, 2, 65536, 65537, 3, 131072, 65537, 0, 196608, 65537, 1, 262144, 65537, 2, 327680, 65537, 3, -131071, 131073, 0, -65535, 131073, 1, 1, 131073, 2, 65537, 131073, 3, 131073, 131073, 0, 196609, 131073, 1, 262145, 131073, 2, 327681, 131073, 3, -131070, 196609, 0, -65534, 196609, 1, 2, 196609, 2, 65538, 196609, 3, 131074, 196609, 0, 196610, 196609, 1, 262146, 196609, 2, 327682, 196609, 3, -131069, 1, 0, -65533, 1, 1, 3, 1, 2, 65539, 1, 3, 131075, 1, 0, 196611, 1, 1, 262147, 1, 2, 327683, 1, 3, -131068, 65537, 0, -65532, 65537, 1, 4, 65537, 2, 65540, 65537, 3, 131076, 65537, 0, 196612, 65537, 1, 262148, 65537, 2, 327684, 65537, 3, -131067, 131073, 0, -65531, 131073, 1, 5, 131073, 2, 65541, 131073, 3, 131077, 131073, 0, 196613, 131073, 1, 262149, 131073, 2, 327685, 131073, 3, -131066, 196609, 0, -65530, 196609, 1, 6, 196609, 2, 65542, 196609, 3, 131078, 196609, 0, 196614, 196609, 1, 262150, 196609, 2, 327686, 196609, 3)
+layer_0/tile_data = PackedInt32Array(-65537, 1, 0, -1, 1, 1, 65535, 1, 2, 131071, 1, 3, 196607, 1, 0, 262143, 1, 1, 327679, 1, 2, 393215, 1, 3, -131072, 65537, 0, -65536, 65537, 1, 0, 65537, 2, 65536, 65537, 3, 131072, 65537, 0, 196608, 65537, 1, 262144, 65537, 2, 327680, 65537, 3, -131071, 131073, 0, -65535, 131073, 1, 1, 131073, 2, 65537, 131073, 3, 131073, 131073, 0, 196609, 131073, 1, 262145, 131073, 2, 327681, 131073, 3, -131070, 196609, 0, -65534, 196609, 1, 2, 196609, 2, 65538, 196609, 3, 131074, 196609, 0, 196610, 196609, 1, 262146, 196609, 2, 327682, 196609, 3, -131069, 1, 0, -65533, 1, 1, 3, 1, 2, 65539, 1, 3, 131075, 1, 0, 196611, 1, 1, 262147, 1, 2, 327683, 1, 3, -131068, 65537, 0, -65532, 65537, 1, 4, 65537, 2, 65540, 65537, 3, 131076, 65537, 0, 196612, 65537, 1, 262148, 65537, 2, 327684, 65537, 3, -131067, 131073, 0, -65531, 131073, 1, 5, 131073, 2, 65541, 131073, 3, 131077, 131073, 0, 196613, 131073, 1, 262149, 131073, 2, 327685, 131073, 3, -131066, 196609, 0, -65530, 196609, 1, 6, 196609, 2, 131078, 196609, 0, 196614, 196609, 1, 262150, 196609, 2, 327686, 196609, 3, 65542, 131073, 1)
 layer_1/name = "1"
 layer_1/enabled = true
 layer_1/modulate = Color(0.333333, 0.0313726, 0, 0.396078)
@@ -147,3 +217,12 @@ layer_0/tile_data = PackedInt32Array(327687, 0, 3, -131065, 0, 0, -196601, 0, 3,
 [node name="StaticBody2D" parent="." instance=ExtResource("8_x6sb2")]
 position = Vector2(8, -8)
 type = "parede"
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("8_x6sb2")]
+position = Vector2(24, -8)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("8_x6sb2")]
+position = Vector2(8, 8)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("8_x6sb2")]
+position = Vector2(24, 8)

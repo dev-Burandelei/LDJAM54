@@ -1,19 +1,12 @@
 extends Area2D
 
-const CURRENT = {IN = 1,
-				OUT = -1,
-				NONE = 0}
+const TYPES = {GROUND = "terra",
+				HOLE = "buraco",
+				RIVER = "água",
+				BARRIER = "barreira",
+				WALL = "parede"}
 
-@onready var current = CURRENT.NONE
-
-func change_current(value):
-	match value:
-		1:
-			current = CURRENT.IN
-		0:
-			current = CURRENT.NONE
-		-1:
-			current = CURRENT.OUT
-
-func return_current():
-	return current
+func dig():
+	for body in get_overlapping_bodies():
+		if body.has_method("change_type"):
+			body.change_type(TYPES.HOLE)

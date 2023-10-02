@@ -7,3 +7,4 @@ res://scenes/testmap.tscn
 res://scenes/cleito.tscn
 res://scenes/button.tscn
 res://scenes/testmap_vand.tscn
+res://scripts/button.gd

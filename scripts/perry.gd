@@ -25,6 +25,16 @@ func _ready():
 func _physics_process(delta):
 	if move_timer.is_stopped():
 		move()
+	if Input.is_action_just_pressed("Dig"):
+		match last_movement:
+			"up":
+				uphitbox.dig()
+			"right":
+				righthitbox.dig()
+			"down":
+				downhitbox.dig()
+			"left":
+				lefthitbox.dig()
 	
 func move():
 	if hitboxes[0] != TYPES.WALL and Input.is_action_just_pressed("Up"):
