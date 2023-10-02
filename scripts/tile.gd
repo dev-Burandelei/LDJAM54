@@ -21,6 +21,8 @@ var hitboxes
 func _ready():
 	hitboxes = [uphitbox, righthitbox, downhitbox, lefthitbox]
 	change_type(type)
+	if type == TYPES.RIVER:
+		river_base()
 
 func change_type(type):
 	match type:
