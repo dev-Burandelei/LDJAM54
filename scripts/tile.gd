@@ -10,13 +10,15 @@ const CURRENT = {IN = 1,
 				OUT = -1,
 				NONE = 0}
 
-var hitboxes
 @onready var hurtbox = $CollisionShape2D
 @onready var uphitbox = $Neighbours/Top
 @onready var righthitbox = $Neighbours/Right
 @onready var downhitbox = $Neighbours/Bottom
 @onready var lefthitbox = $Neighbours/Left
+
 @export var type = TYPES.GROUND
+
+var hitboxes
 
 func _ready():
 	hitboxes = [uphitbox, righthitbox, downhitbox, lefthitbox]
@@ -44,6 +46,10 @@ func change_type(type):
 			for side in hitboxes:
 				side.set_deferred("disabled", true)
 				side.change_current(CURRENT.NONE)
+		TYPES.WALL:
+			type = TYPES.WALL
+			for side in hitboxes:
+				side.set_deferred("disabled", true)
 
 func river_base():
 	for side in hitboxes:
@@ -80,3 +86,6 @@ func get_right():
 	
 func get_down():
 	return downhitbox.return_current()
+	
+func get_type():
+	return type

@@ -1,12 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://dx8au8yvqlmc4"]
+[gd_scene load_steps=14 format=3 uid="uid://b4vpbglgdnaqj"]
 
 [ext_resource type="PackedScene" uid="uid://c4j2rq72au0et" path="res://scenes/cleito.tscn" id="1_608d1"]
 [ext_resource type="Script" path="res://testmap_vand.gd" id="1_eh2dw"]
 [ext_resource type="Texture2D" uid="uid://ml8hx7qo5htq" path="res://assets/grama2.png" id="2_5amwg"]
 [ext_resource type="PackedScene" uid="uid://cqmn6o8m6h40k" path="res://scenes/perry.tscn" id="2_eavri"]
-[ext_resource type="PackedScene" uid="uid://k5xmjhtwjiw6" path="res://scenes/button.tscn" id="3_cadbo"]
+[ext_resource type="PackedScene" uid="uid://pbapmo7fugu5" path="res://scenes/button.tscn" id="3_cadbo"]
 [ext_resource type="Texture2D" uid="uid://dsgk8k5myywt6" path="res://tile_grid_m.png" id="3_jutpt"]
 [ext_resource type="Texture2D" uid="uid://bj5oxjthvv37s" path="res://assets/nevoa2.png" id="7_y70u8"]
+[ext_resource type="PackedScene" uid="uid://m5yp52deh0eo" path="res://scenes/tile.tscn" id="8_x6sb2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qhr6q"]
 texture = ExtResource("2_5amwg")
@@ -142,3 +143,7 @@ position = Vector2(80, -16)
 tile_set = SubResource("TileSet_juyih")
 format = 2
 layer_0/tile_data = PackedInt32Array(327687, 0, 3, -131065, 0, 0, -196601, 0, 3, -196605, 0, 3, -196604, 65536, 3, -196603, 131072, 3, -196602, 196608, 3, -131073, 0, 3, -196608, 65536, 3, -196607, 131072, 3, -196606, 196608, 3, -131074, 196608, 3, -65538, 196608, 0, -2, 196608, 1, 65534, 196608, 2, 131070, 196608, 3, 196606, 196608, 0, 262142, 196608, 1, 327678, 196608, 2, 393214, 196608, 3, 458750, 0, 0, 458751, 65536, 0, 393216, 131072, 0, 393217, 196608, 0, 393218, 0, 0, 393219, 65536, 0, 393220, 131072, 0, 393221, 196608, 0, 393222, 0, 0, 393223, 65536, 0, -65529, 0, 0, 7, 0, 0, 65543, 0, 1, 131079, 0, 2, 196615, 0, 3, 262151, 0, 2)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("8_x6sb2")]
+position = Vector2(8, -8)
+type = "parede"
