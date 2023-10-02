@@ -26,14 +26,10 @@ func _process(_delta):
 #		emit_signal("release")
 #		print("release")
 
-
-func _on_area_entered(area):
-	emit_signal("held_down")
-	print("held down")
-
-
-
-
-func _on_area_exited(area):
+func _on_area_exited(_area):
 	emit_signal("release")
 	print("release")
+
+func _on_area_entered(_area):
+	emit_signal("held_down")
+	print("held down")

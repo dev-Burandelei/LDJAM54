@@ -22,7 +22,7 @@ func _ready():
 	$Sprite2D.play("idle_up")
 	hitboxes = ["NONE", "NONE", "NONE", "NONE"]
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	if move_timer.is_stopped():
 		move()
 	if Input.is_action_just_pressed("Dig"):
