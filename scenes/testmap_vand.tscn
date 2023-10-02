@@ -4,7 +4,8 @@
 [ext_resource type="Script" path="res://testmap_vand.gd" id="1_eh2dw"]
 [ext_resource type="Texture2D" uid="uid://ml8hx7qo5htq" path="res://assets/grama2.png" id="2_5amwg"]
 [ext_resource type="PackedScene" uid="uid://cqmn6o8m6h40k" path="res://scenes/perry.tscn" id="2_eavri"]
-[ext_resource type="PackedScene" uid="uid://k5xmjhtwjiw6" path="res://scenes/button.tscn" id="3_cadbo"]
+[ext_resource type="Texture2D" uid="uid://dgqxxihv1liga" path="res://assets/New Piskel.png" id="2_km5ta"]
+[ext_resource type="PackedScene" uid="uid://pbapmo7fugu5" path="res://scenes/button.tscn" id="3_cadbo"]
 [ext_resource type="Texture2D" uid="uid://dsgk8k5myywt6" path="res://tile_grid_m.png" id="3_jutpt"]
 [ext_resource type="Texture2D" uid="uid://ccmmcqosqq2v7" path="res://assets/New Piskel-1.png.png" id="5_68h26"]
 [ext_resource type="PackedScene" uid="uid://d4fbnxtp3iyoi" path="res://scenes/mist.tscn" id="7_8ph0u"]
@@ -30,12 +31,80 @@ texture = ExtResource("2_5amwg")
 2:3/0 = 0
 3:3/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uxn8q"]
+texture = ExtResource("2_km5ta")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7dmqi"]
 texture = ExtResource("3_jutpt")
 
 [sub_resource type="TileSet" id="TileSet_n7iwx"]
 sources/1 = SubResource("TileSetAtlasSource_qhr6q")
 sources/8 = SubResource("TileSetAtlasSource_7dmqi")
+sources/2 = SubResource("TileSetAtlasSource_uxn8q")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k5bh4"]
 texture = ExtResource("5_68h26")
@@ -155,6 +224,7 @@ sources/1 = SubResource("TileSetAtlasSource_wx8oa")
 script = ExtResource("1_eh2dw")
 
 [node name="TileMap" type="TileMap" parent="."]
+unique_name_in_owner = true
 tile_set = SubResource("TileSet_n7iwx")
 format = 2
 layer_0/name = "0"
