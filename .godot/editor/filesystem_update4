@@ -1,11 +1,9 @@
-res://scenes/testmap_vand.tscn
 res://scenes/testmap.tscn
 res://scenes/perry.tscn
 res://scenes/cleito.tscn
 res://scenes/tile.tscn
 res://scenes/button.tscn
+res://scenes/testmap_vand.tscn
 res://scenes/mapa.tscn
 res://scenes/mist.tscn
 res://testmap_vand.gd
-res://scripts/button.gd
-res://scripts/perry.gd

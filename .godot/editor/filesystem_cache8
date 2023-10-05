@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696269904
+::res://::1696297189
 icon.svg::CompressedTexture2D::4947917176479174178::1696201982::1696201982::1::::<><>::
 scheme.png::CompressedTexture2D::3181852827687139363::1696201982::1696213384::1::::<><>::
-testmap_vand.gd::GDScript::-1::1696265568::0::1::::<>Node2D<>::
+testmap_vand.gd::GDScript::-1::1696282453::0::1::::<>Node2D<>::
 tile_grid_m.png::CompressedTexture2D::8435714176370671421::1696265568::1696265568::1::::<><>::
 ::res://assets/::1696265568
 botao.png::CompressedTexture2D::3873605764770235706::1696202300::1696202300::1::::<><>::
@@ -21,20 +21,20 @@ pedra_empurrar2.png::CompressedTexture2D::5331328755405461042::1696265568::16962
 pedra_empurrar.png::CompressedTexture2D::6568052534561212877::1696265568::1696265568::1::::<><>::
 perfil_esquerdo_parado.png::CompressedTexture2D::2722376504746516415::1696265568::1696265568::1::::<><>::
 pperfil_direito_parado.png::CompressedTexture2D::1693030619028406677::1696265568::1696265568::1::::<><>::
-::res://scenes/::1696268380
-button.tscn::PackedScene::1054924472601991502::1696268380::0::1::::<><>::res://scripts/button.gd<>uid://bvgnyrqm1p2uo::::res://assets/botao.png
-cleito.tscn::PackedScene::6828567841011672191::1696265568::0::1::::<><>::res://scripts/rock.gd<>uid://ch7sg81h2hriw::::res://assets/pedra_empurrar2.png
-mapa.tscn::PackedScene::2909783853110019155::1696263052::0::1::::<><>::res://scripts/mapa.gd
-mist.tscn::PackedScene::9205145575773699940::1696265568::0::1::::<><>::uid://bj5oxjthvv37s::::res://assets/nevoa2.png
-perry.tscn::PackedScene::5921480866052862136::1696268380::0::1::::<><>::res://scripts/perry.gd<>uid://b4di2outnwcll::::res://assets/costas_parado.png<>uid://be10e4v3iasfn::::res://assets/perfil_esquerdo_parado.png<>uid://yed741vo54bp::::res://assets/pperfil_direito_parado.png<>uid://b6ry0p7t6w6ev::::res://assets/frente_parado.png<>res://scripts/player_sides.gd
-testmap.tscn::PackedScene::4389038221926680370::1696267420::0::1::::<><>::uid://ccmmcqosqq2v7::::res://assets/New Piskel-1.png.png<>uid://dgqxxihv1liga::::res://assets/New Piskel.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://c4j2rq72au0et::::res://scenes/cleito.tscn
-testmap_vand.tscn::PackedScene::8841767407837950857::1696269758::0::1::::<><>::uid://c4j2rq72au0et::::res://scenes/cleito.tscn<>res://testmap_vand.gd<>uid://ml8hx7qo5htq::::res://assets/grama2.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://dgqxxihv1liga::::res://assets/New Piskel.png<>uid://pbapmo7fugu5::::res://scenes/button.tscn<>uid://dsgk8k5myywt6::::res://tile_grid_m.png<>uid://ccmmcqosqq2v7::::res://assets/New Piskel-1.png.png<>uid://d4fbnxtp3iyoi::::res://scenes/mist.tscn<>uid://bj5oxjthvv37s::::res://assets/nevoa2.png<>uid://b0xe8fghbqjrk::::res://assets/galhos.png
-tile.tscn::PackedScene::905683068565329810::1696268380::0::1::::<><>::res://scripts/tile.gd<>res://scripts/sides.gd
-::res://scripts/::1696268380
-button.gd::GDScript::-1::1696268380::0::1::::<>Area2D<>::
+::res://scenes/::1696292896
+button.tscn::PackedScene::1054924472601991502::1696283683::0::1::::<><>::res://scripts/button.gd<>uid://bvgnyrqm1p2uo::::res://assets/botao.png
+cleito.tscn::PackedScene::6828567841011672191::1696283683::0::1::::<><>::res://scripts/rock.gd<>uid://ch7sg81h2hriw::::res://assets/pedra_empurrar2.png
+mapa.tscn::PackedScene::2909783853110019155::1696283683::0::1::::<><>::res://scripts/mapa.gd
+mist.tscn::PackedScene::9205145575773699940::1696283683::0::1::::<><>::uid://bj5oxjthvv37s::::res://assets/nevoa2.png
+perry.tscn::PackedScene::5921480866052862136::1696283683::0::1::::<><>::res://scripts/perry.gd<>uid://b4di2outnwcll::::res://assets/costas_parado.png<>uid://be10e4v3iasfn::::res://assets/perfil_esquerdo_parado.png<>uid://yed741vo54bp::::res://assets/pperfil_direito_parado.png<>uid://b6ry0p7t6w6ev::::res://assets/frente_parado.png<>res://scripts/player_sides.gd
+testmap.tscn::PackedScene::4389038221926680370::1696283683::0::1::::<><>::uid://ccmmcqosqq2v7::::res://assets/New Piskel-1.png.png<>uid://rlj0syyxkh4d::::res://assets/New Piskel-1.png (1).png<>uid://dgqxxihv1liga::::res://assets/New Piskel.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://c4j2rq72au0et::::res://scenes/cleito.tscn<>uid://m5yp52deh0eo::::res://scenes/tile.tscn
+testmap_vand.tscn::PackedScene::8841767407837950857::1696292896::0::1::::<><>::uid://c4j2rq72au0et::::res://scenes/cleito.tscn<>res://testmap_vand.gd<>uid://ml8hx7qo5htq::::res://assets/grama2.png<>uid://cqmn6o8m6h40k::::res://scenes/perry.tscn<>uid://dgqxxihv1liga::::res://assets/New Piskel.png<>uid://pbapmo7fugu5::::res://scenes/button.tscn<>uid://dsgk8k5myywt6::::res://tile_grid_m.png<>uid://ccmmcqosqq2v7::::res://assets/New Piskel-1.png.png<>uid://d4fbnxtp3iyoi::::res://scenes/mist.tscn<>uid://bj5oxjthvv37s::::res://assets/nevoa2.png<>uid://b0xe8fghbqjrk::::res://assets/galhos.png<>uid://m5yp52deh0eo::::res://scenes/tile.tscn<>uid://rlj0syyxkh4d::::res://assets/New Piskel-1.png (1).png
+tile.tscn::PackedScene::905683068565329810::1696283683::0::1::::<><>::res://scripts/tile.gd<>res://scripts/sides.gd
+::res://scripts/::1696283527
+button.gd::GDScript::-1::1696283136::0::1::::<>Area2D<>::
 mapa.gd::GDScript::-1::1696265568::0::1::::<>Node2D<>::
-perry.gd::GDScript::-1::1696268380::0::1::::<>CharacterBody2D<>::
-player_sides.gd::GDScript::-1::1696268380::0::1::::<>Area2D<>::
+perry.gd::GDScript::-1::1696283136::0::1::::<>CharacterBody2D<>::
+player_sides.gd::GDScript::-1::1696283527::0::1::::<>Area2D<>::
 rock.gd::GDScript::-1::1696201982::0::1::::<>CharacterBody2D<>::
 sides.gd::GDScript::-1::1696213384::0::1::::<>Area2D<>::
-tile.gd::GDScript::-1::1696268380::0::1::::<>StaticBody2D<>::
+tile.gd::GDScript::-1::1696283527::0::1::::<>StaticBody2D<>::
