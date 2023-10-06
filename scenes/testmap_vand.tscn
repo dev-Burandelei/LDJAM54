@@ -1,8 +1,9 @@
-[gd_scene load_steps=27 format=3 uid="uid://dx8au8yvqlmc4"]
+[gd_scene load_steps=28 format=3 uid="uid://dx8au8yvqlmc4"]
 
 [ext_resource type="PackedScene" uid="uid://c4j2rq72au0et" path="res://scenes/cleito.tscn" id="1_608d1"]
 [ext_resource type="Script" path="res://testmap_vand.gd" id="1_eh2dw"]
 [ext_resource type="Texture2D" uid="uid://ml8hx7qo5htq" path="res://assets/grama2.png" id="2_5amwg"]
+[ext_resource type="PackedScene" uid="uid://b058s0t0t647l" path="res://scenes/undo.tscn" id="2_5ink7"]
 [ext_resource type="PackedScene" uid="uid://cqmn6o8m6h40k" path="res://scenes/perry.tscn" id="2_eavri"]
 [ext_resource type="Texture2D" uid="uid://dgqxxihv1liga" path="res://assets/New Piskel.png" id="2_km5ta"]
 [ext_resource type="PackedScene" uid="uid://pbapmo7fugu5" path="res://scenes/button.tscn" id="3_cadbo"]
@@ -415,3 +416,6 @@ zoom = Vector2(10, 6)
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
+
+[node name="Undo" parent="." instance=ExtResource("2_5ink7")]
+position = Vector2(16, 32)

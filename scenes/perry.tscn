@@ -48,7 +48,7 @@ size = Vector2(16, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8rgoc"]
 size = Vector2(16, 16)
 
-[node name="Perry" type="CharacterBody2D"]
+[node name="Perry" type="CharacterBody2D" groups=["player"]]
 collision_mask = 0
 script = ExtResource("1_eqjdl")
 

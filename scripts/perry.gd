@@ -9,6 +9,8 @@ const TYPES = {GROUND = "terra",
 const MOVE_RANGE = 16
 const MOVE_COOLDOWN = 0.10
 
+signal executed_action(node, do_method, do_args, undo_method, undo_args)
+
 @onready var uphitbox = $Neighbours/Top
 @onready var righthitbox = $Neighbours/Right
 @onready var downhitbox = $Neighbours/Bottom
@@ -24,7 +26,7 @@ func _ready():
 	
 func _physics_process(_delta):
 	if move_timer.is_stopped():
-		move()
+		_input_control()
 	if Input.is_action_just_pressed("Dig"):
 		match last_movement:
 			"up":
@@ -36,27 +38,47 @@ func _physics_process(_delta):
 			"left":
 				lefthitbox.dig()
 	
-func move():
-	if hitboxes[0] != TYPES.WALL and Input.is_action_just_pressed("Up"):
-		last_movement = "up"
+func _input_control():
+	if Input.is_action_just_pressed("Up"):
+		move("Up", 0)
+	elif Input.is_action_just_pressed("Down"):
+		move("Down", 0)
+	elif Input.is_action_just_pressed("Left"):
+		move("Left", 0)
+	elif Input.is_action_just_pressed("Right"):
+		move("Right", 0)
+		
+func move(input, save):
+	if hitboxes[0] != TYPES.WALL and input == "Up":
+		last_movement = "Up"
 		$Sprite2D.play("idle_down")
 		position.y -= MOVE_RANGE
 		move_timer.start(MOVE_COOLDOWN)
-	elif hitboxes[2] != TYPES.WALL and Input.is_action_just_pressed("Down"):
+		if save == 0:
+			emit_signal("executed_action",self, "move", [last_movement, 1], "move", ["Down", 1])
+	elif hitboxes[2] != TYPES.WALL and input == "Down":
 		$Sprite2D.play("idle_up")
-		last_movement = "down"
+		last_movement = "Down"
 		position.y += MOVE_RANGE
 		move_timer.start(MOVE_COOLDOWN)
-	elif hitboxes[3] != TYPES.WALL and Input.is_action_just_pressed("Left"):
+		if save == 0:
+			emit_signal("executed_action",self, "move", [last_movement, 1], "move", ["Up", 1])
+	elif hitboxes[3] != TYPES.WALL and input == "Left":
 		$Sprite2D.play("idle_left")
-		last_movement = "left"
+		last_movement = "Left"
 		position.x -= MOVE_RANGE
 		move_timer.start(MOVE_COOLDOWN)
-	elif hitboxes[1] != TYPES.WALL and Input.is_action_just_pressed("Right"):
+		if save == 0:
+			emit_signal("executed_action",self, "move", [last_movement, 1], "move", ["Right", 1])
+	elif hitboxes[1] != TYPES.WALL and input == "Right":
 		$Sprite2D.play("idle_right")
-		last_movement = "right"
+		last_movement = "Right"
 		position.x += MOVE_RANGE
 		move_timer.start(MOVE_COOLDOWN)
+		if save == 0:
+			emit_signal("executed_action",self, "move", [last_movement, 1], "move", ["Left", 1])
+	elif input == "stop":
+		pass
 	
 
 func return_last_movement():
